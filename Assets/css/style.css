@@ -16,7 +16,7 @@ font-family: 'Open Sans', sans-serif;
 
 a {
     text-decoration: none;
-
+    
 }
 
 p{
@@ -27,16 +27,26 @@ h1,h2,h3{
     line-height: 1.5em;
 }
 
-
+h3{
+    font-family: boldFont, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+span{
+    font-family: boldFont, sans-serif;
+    font-weight: 600;
+    display: block;
+}
 /***************HOME***************/
 
 #video-background {
   position: fixed;
-  right: 0;
+  right: 0; 
   bottom: 0;
-  min-width: 100%;
+  min-width: 100%; 
   min-height: 100%;
-  width: auto;
+  width: auto; 
   height: auto;
   z-index: -100;
 }
@@ -70,7 +80,7 @@ font-family: blackFont , sans-serif;
     font-weight: 900;
     color: white;
 
-
+    
 }
 
 .homeNav ul a:hover, .homeNav ul a:focus, .homeNav ul a{
@@ -141,7 +151,7 @@ font-size: 20px;
     }
 }
 
-#docu,#stories,#pls_change_name {
+#docu,#stories,#map {
     margin-top: 8vh;
 }
 
@@ -159,7 +169,7 @@ font-size: 20px;
     font-weight: 900;
     color: black;
     text-transform: uppercase;
-
+    
 }
 #over h1 {
     color: white;
@@ -169,7 +179,7 @@ font-size: 20px;
     padding-top: 5vh;
     background-color: #547F8C;
     padding-bottom: 5vh;
-
+    
 }
 
 
@@ -195,10 +205,10 @@ font-size: 20px;
 }
 
 .imgOver {
-
+  
    display:block;
     margin:auto;
-
+   
     text-align: center;
     width: 75%;
     height: auto;
@@ -209,7 +219,7 @@ font-size: 20px;
 }
 
 @media screen and (max-width: 1170px){
-
+    
     .paddingOverLogo{
         padding-top: 20vh;
         display:block;
@@ -218,9 +228,9 @@ font-size: 20px;
 }
 
 @media screen and (max-width: 767px){
-
+    
     .paddingOverLogo{
-
+  
         padding-top: 2vh;
         width: 50%;
     }
@@ -242,7 +252,7 @@ font-size: 20px;
     background-size: cover;
 }
 .quoteRow{
-
+  
 }
 
 .caption {
@@ -253,23 +263,44 @@ font-size: 20px;
     text-align: center;
     color: white;
     font-size: 50px;
-
+   
     text-transform: uppercase;
     letter-spacing: .2em;
     font-weight: 900;
 }
 
 .overQuote{
-
+   
 font-family: boldFont, sans-serif !important;
+    
+}
 
+.overQuoteCast{
+    font-family: boldFont, sans-serif !important;
+    padding-top: 1em;
 }
 
 @media screen and (max-width: 510px){
     .overQuote {
         font-size: 30px;
     }
+    
+}
 
+@media screen and (max-width: 510px){
+    .overQuoteCast {
+        font-size: 30px;
+    }
+    .bgimg {
+    background-image: url(../img/AAAMASTER.png);
+    min-height: 200px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
 }
 
 #cast {
@@ -277,12 +308,12 @@ font-family: boldFont, sans-serif !important;
 }
 #castGrid {
     height: 150px;
-
+    
 }
 
 #castGrid img {
     width:  100%;
-
+    
 }
 
 .castTitle{
@@ -296,7 +327,7 @@ font-family: boldFont, sans-serif !important;
 }
 
 .thumb {
-
+   
         height: 250px;
     background-size: cover;
 }
@@ -307,10 +338,12 @@ font-family: boldFont, sans-serif !important;
 
 .channelOne{
     background-image: url(../img/CAST/CHANNEL%20ONE%20SOUNDSYSTEM.png);
+    background-position: -50px;
 }
 
 .congo {
     background-image: url(../img/CAST/CONGO%20ASHANTI%20ROY.png);
+    background-position: -25px;
 }
 
 .crucialA {
@@ -323,6 +356,7 @@ font-family: boldFont, sans-serif !important;
 
 .drDog {
     background-image: url(../img/CAST/DOCTOR%20DOG.png);
+    background-position: -50px;
 }
 
 .donW {
@@ -343,10 +377,12 @@ font-family: boldFont, sans-serif !important;
 
 .KarelM {
     background-image: url(../img/CAST/KAREL%20MICHIELS.png);
+    background-position: -50px;
 }
 
 .kiangana {
     background-image: url(../img/CAST/KIANGANA.png);
+    background-position: -50px;
 }
 
 .kingF{
@@ -363,10 +399,12 @@ font-family: boldFont, sans-serif !important;
 
 .missingL {
     background-image: url(../img/CAST/MISSING%20LINK.png);
+    background-position: -75px;
 }
 
 .nomadix {
     background-image: url(../img/CAST/NOMADIX.png);
+    background-position: -25px;
 }
 
 .panache{
@@ -375,14 +413,17 @@ font-family: boldFont, sans-serif !important;
 
 .profCat {
     background-image: url(../img/CAST/PROFESSOR%20CAT.png);
+    background-position: -25px;
 }
 
 .puraman{
     background-image: url(../img/CAST/PURAMAN.png);
+    background-position: -50px;
 }
 
 .radics{
     background-image: url(../img/CAST/RADICS.png);
+    background-position: -25px;
 }
 
 .rasM {
@@ -395,7 +436,10 @@ font-family: boldFont, sans-serif !important;
 
 .russD{
     background-image: url(../img/CAST/RUSS%20D.png);
+    background-position: -50px;
 }
+
+
 @media only screen and (max-width: 1500px) and (min-width: 1200px)  {
 
     .thumb {
@@ -408,6 +452,208 @@ font-family: boldFont, sans-serif !important;
         height: 200px;
     }
 }
+
+
+
+/****QUERIES POSITIONING GRID****/
+
+@media screen and (max-width: 1400px){
+    .drDog {
+        background-position: -75px;
+    }
+    
+    .kiangana {
+        background-position: -75px;
+    }
+    .KarelM {
+        background-position: -125px;
+    }
+    
+    .donW {
+        background-position: -75px;
+    }
+    
+    .fatman{
+        background-position: -50px;
+    }
+    
+    .missingL {
+        background-position: -125px;
+    }
+    .panache{
+        background-position: -50px;
+    }
+    .profCat {
+        background-position: -75px;
+    }
+    .puraman{
+        background-position: -150px;
+    }
+    .radics{
+        background-position: -50px;
+    }
+    .rasM {
+        background-position: -75px;
+    }
+    .russD{
+        background-position: -150px;
+    }
+    .nomadix{
+        background-position: -100px;
+    }
+    
+    .congo{
+        background-position: -50px;   
+    }
+    
+}
+
+
+@media screen and (max-width: 1150px){
+    .drDog {
+        background-position: -75px;
+    }
+    
+    .kiangana {
+        background-position: -75px;
+    }
+    .KarelM {
+        background-position: -125px;
+    }
+    
+    .donW {
+        background-position: -75px;
+    }
+    
+    .fatman{
+        background-position: -50px;
+    }
+    
+    .missingL {
+        background-position: -125px;
+    }
+    .panache{
+        background-position: -50px;
+    }
+    .profCat {
+        background-position: -75px;
+    }
+    .puraman{
+        background-position: -150px;
+    }
+    .radics{
+        background-position: -100px;
+    }
+    .rasM {
+        background-position: -75px;
+    }
+    .russD{
+        background-position: -150px;
+    }
+    .nomadix{
+        background-position: -100px;
+    }
+    
+    .congo{
+        background-position: -50px;   
+    }
+    
+}
+
+
+@media screen and (max-width: 1000px){
+    .drDog {
+        background-position: -150px;
+    }
+    
+    .kiangana {
+        background-position: -150px;
+    }
+    .KarelM {
+        background-position: -175px;
+    }
+    .donW {
+        background-position: -100px;
+    }
+    
+    .fatman{
+        background-position: -75px;
+    }
+    
+    .missingL {
+        background-position: -200px;
+    }
+    .panache{
+        background-position: -100px;
+    }
+    .profCat {
+        background-position: -150px;
+    }
+    .puraman{
+        background-position: -150px;
+    }
+    .radics{
+        background-position: -150px;
+    }
+    .rasM {
+        background-position: -75px;
+    }
+    .russD{
+        background-position: -200px;
+    }
+    .nomadix{
+        background-position: -100px ;
+    }
+    
+}
+
+
+@media screen and (max-width: 475px){
+    .drDog {
+        background-position: -150px;
+    }
+    
+    .kiangana {
+        background-position: -100px;
+    }/*
+    .KarelM {
+        background-position: ;
+    }
+    .donW {
+        background-position: ;
+    }
+    
+    .fatman{
+        background-position: ;
+    }
+    */
+    .missingL {
+        background-position: -100px;
+    }/*
+    .panache{
+        background-position: ;
+    }
+    .profCat {
+        background-position: ;
+    }
+    .puraman{
+        background-position: ;
+    }
+    .radics{
+        background-position: ;
+    }
+    .rasM {
+        background-position: ;
+    }*/
+    .russD{
+        background-position: -100px;
+    }/*
+    .nomadix{
+        background-position: ;
+    }*/
+    
+}
+
 
 #cast h2 {
     font-family: boldFont , sans-serif;
@@ -432,11 +678,11 @@ font-family: boldFont, sans-serif !important;
 }
 
 .thumb:nth-child(odd) .gridImages .overlay {
-
+  
   background-color: #547F8C;
 }
 .thumb:nth-child(even) .gridImages .overlay {
-
+  
   background-color: #90caa2;
 }
 
@@ -462,14 +708,14 @@ font-family: boldFont, sans-serif !important;
     margin-top: 8vh;
     background-color: #FFFFFF;
     margin-bottom: 5vh;
-
+    
 }
 
 #storiesBody {
     color: black;
     background-color: #FFFFFF;
     margin-top: 5vh;
-
+ 
 }
 
 #storytitle {
@@ -498,10 +744,10 @@ font-family: boldFont, sans-serif !important;
         height: 50px;
         margin-bottom: 3vh;
         float: left;
-
+        
     }
-
-
+    
+ 
 }
 
 .clear{
@@ -531,12 +777,12 @@ font-family: boldFont, sans-serif !important;
 
 .readMore {
     font-style: italic;
-
+    
 }
 
 /******OLDER POSTS******/
 
-.row h3{
+.arrowDiv h3{
     font-family: boldFont, sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -546,12 +792,12 @@ font-family: boldFont, sans-serif !important;
 
 
 #olderPosts{
-
+    
 }
 
 #olderPosts h3:hover{
     text-decoration: none;
-
+    
 }
 
 
@@ -609,7 +855,7 @@ font-family: boldFont, sans-serif !important;
 #image{
     width: 100%;
     height: auto;
-
+    
 }
 
 /***************ARTIST***************/
@@ -628,7 +874,7 @@ font-family: boldFont, sans-serif !important;
 
 .artistName{
     margin-bottom: 5vh;
-
+    
 }
 
 #artist ul {
@@ -670,7 +916,7 @@ font-family: boldFont, sans-serif !important;
 .artistAbout {
     box-sizing:border-box;
     padding-left: 40px;
-
+    
 }
 
 .artistSocial {
@@ -693,182 +939,3 @@ font-family: boldFont, sans-serif !important;
     width: auto;
 }
 
-
-/* google maps */
-
-#pls_change_name {
-  margin: 40px 0 20px 0;
-}
-
-#map {
-  height: calc(100vh - 115px);
-  width: 100%;
-}
-
-.checkbox {
-  height: calc(100vh - 115px);
-  background-color: rgba(255, 255, 255, 0.95);
-  position: absolute !important;
-  top: 105px;
-  z-index: 100;
-  visibility: visible;
-  width: 0 !important;
-  padding: 0 !important;
-  overflow: hidden;
-}
-
-.checkbox2 {
-  padding: 15px !important;
-  width: 300px !important;
-}
-
-input {
-  position: relative !important;
-  right:0;
-  float: right;
-}
-
-ul {
-  margin: 0 !important
-}
-
-ul li {
-  margin-bottom: 10px;
-}
-
-
-/* MODAL VOOR MAP */
-
-.modalmap {
-  position: absolute !important;
-  top: 115px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1000;
-  opacity: 0;
-  visibility: hidden;
-  transition: 350ms;
-}
-
-.modalmap_inner {
-  z-index: 500;
-  width: 600px;
-  height: 500px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #E9E6E6;
-  border-radius: 6px;
-  padding: 30px;
-  overflow: scroll;
-}
-
-::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
-}
-
-.modalmap_inner_topcontent {
-    overflow: auto;
-}
-
-.content_left, .content_right {
-  padding: 0px !important;
-}
-
-.content_right {
-  padding-left: 20px !important;
-}
-
-.content_right a {
-    color: #7DC494;
-    transition: 200ms;
-}
-
-.content_right a:hover {
-  text-decoration: none;
-  color: #609972;
-}
-
-#artistimg {
-  width: 100%;
-}
-
-.infocontent {
-  height: 100%;
-}
-
-#name {
-  font-size: 1.5em;
-  hyphens: none;
-  font-weight: bold;
-  margin-bottom: 0 !important
-}
-
-#filter {
-  opacity: 0.8;
-}
-
-#about {
-  font-size: 1.6em;
-  font-weight: bold;
-  margin-top: 15px;
-}
-
-#filterbutton {
-  display: none;
-}
-/* Media Queries Mobiel */
-
-@media (max-width: 768px) {
-
-  /* MAP */
-
-  .checkbox {
-    top: 127px;
-    height: 0;
-    width: 100% !important;
-    padding: 20px 30px 15px 30px !important;
-    visibility: hidden;
-  }
-
-  #filterbutton {
-    margin: 0 auto;
-    width: 100%;
-    display: block;
-    background-color: white;
-    border: 1px solid white;
-    padding: 15px 0;
-    font-size: 1.3em;
-    position: absolute;
-    top: 100px;
-  }
-
-  .modalmap {
-    padding: 10px !important;
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-
-  .modalmap_inner {
-    width: 90%;
-  }
-}
-
-@media (max-width: 340px) {
-  .modalmap_inner {
-    height: 400px;
-  }
-
-  .content_left {
-    width: 100%;
-  }
-  .content_right {
-    padding-left: 0 !important;
-    text-align: center;
-    width: 100%;
-  }
-}
