@@ -974,11 +974,11 @@ input {
   float: right;
 }
 
-ul {
+#filterlinks {
   margin: 0 !important
 }
 
-ul li {
+#filterlinks li {
   margin-bottom: 10px;
 }
 
