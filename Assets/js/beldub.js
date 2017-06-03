@@ -1,3 +1,121 @@
+var provinciemark = [
+  {
+  "id": "hasselt",
+  "lat": "50.93069",
+  "lng": "5.33248"
+  },
+  {
+  "id": "genk",
+  "lat": "50.96613",
+  "lng": "5.5021"
+  },
+  {
+  "id": "lommel",
+  "lat": "51.230419",
+  "lng": "5.311006"
+  },
+  {
+  "id": "tongeren",
+  "lat": "50.78419",
+  "lng": "5.47449"
+  },
+  {
+  "id": "antwerpen",
+  "lat": "51.2194475",
+  "lng": "4.4024643",
+  },
+  {
+  "id": "mechelen",
+  "lat": "51.0258761",
+  "lng": "4.4775362",
+  },
+  {
+  "id": "turnhout",
+  "lat": "51.3216509",
+  "lng": "4.9375577",
+  },
+  {
+  "id": "lier",
+  "lat": "51.1358656",
+  "lng": "4.56211749",
+  },
+  {
+  "id": "mol",
+  "lat": "51.191087",
+  "lng": "5.1170647",
+  },
+  {
+  "id": "geel",
+  "lat": "51.16257",
+  "lng": "4.990839",
+  },
+  {
+  "id": "leuven",
+  "lat": "50.8798",
+  "lng": "4.7005"
+  },
+  {
+  "id": "vilvoorde",
+  "lat": "50.9272",
+  "lng": "4.4257"
+  },
+  {
+  "id": "halle",
+  "lat": "50.7375",
+  "lng": "4.2325"
+  },
+  {
+  "id": "diest",
+  "lat": "50.9896",
+  "lng": "5.0501"
+  },
+  {
+  "id": "Sint-Niklaas",
+  "lat": "51.155689",
+  "lng": "4.154034"
+  },
+  {
+  "id": "Lokeren",
+  "lat": "51.102341",
+  "lng": "3.994066"
+  },
+  {
+  "id": "Dendermonden",
+  "lat": "51.025477",
+  "lng": "4.101952"
+  },
+  {
+  "id": "Geraardsbergen",
+  "lat": "50.768100",
+  "lng": "3.878753"
+  },
+  {
+  "id": "Gent",
+  "lat": "51.054342",
+  "lng": "3.717424"
+  },
+  {
+  "id": "brugge",
+  "lat": "51.2093",
+  "lng": "3.2247"
+  },
+  {
+  "id": "ieper",
+  "lat": "50.8492",
+  "lng": "2.8779"
+  },
+  {
+  "id": "oostende",
+  "lat": "51.2154",
+  "lng": "2.9286"
+  },
+  {
+  "id": "kortrijk",
+  "lat": "50.8194",
+  "lng": "3.2577"
+  }
+]
+
 var locatie = [{
    "id": "antwerpen",
    "lat": "51.2194",
@@ -8,7 +126,7 @@ var locatie = [{
    "id": "hasselt",
    "lat": "50.9307",
    "lng": "5.3325",
-   "ic": "Assets/img/iconenProv/limburg.svg"
+   "ic": "Assets/img/iconenProv/limb.svg"
   },
   {
    "id": "gent",
@@ -194,7 +312,7 @@ var map;
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: 50.995945, lng: 4.382025},
-      zoom: 9,
+      zoom: 8,
       styles: [ { "featureType": "all", "elementType": "labels.text.fill", "stylers": [ { "saturation": 36 }, { "color":
               "#333333" }, { "lightness": 40 } ] }, { "featureType": "all", "elementType": "labels.text.stroke",
               "stylers": [ { "visibility": "on" }, { "color": "#ffffff" }, { "lightness": 16 } ] }, { "featureType": "all",
@@ -215,7 +333,38 @@ function initMap() {
               "lightness": 17 } ] } ]
   });
 
-  // /////////// test ///////////
+  var gemeentemarkers = [];
+
+function test() {
+  for (var i = 0; i < provinciemark.length; i++) {
+    var gemeentemarker = new google.maps.Marker({
+        position: {
+          lat: Number(provinciemark[i].lat),
+          lng: Number(provinciemark[i].lng)
+        },
+        map: map,
+        icon: {
+          url: "Assets/img/iconen/logobd.svg",
+          scaledSize: new google.maps.Size(50, 50),
+        }
+     });
+     gemeentemarkers.push(gemeentemarker);
+
+     google.maps.event.addListener(gemeentemarker, 'click', function() {
+       map.panTo(this.getPosition(), map.setZoom(12));
+        for (var i = 0; i < checkbox.length; i++) {
+          if (checkbox[i].checked) {
+           //  doe niets
+          }
+          else {
+            checkbox[i].click();
+          }
+        }
+        opties.className += ' checkbox2'
+     });
+  }
+}
+
   var locatiemarkers = [];
 
   for (var i = 0; i < locatie.length; i++) {
@@ -226,7 +375,7 @@ function initMap() {
         },
         map: map,
         icon: {
-          url: "Assets/img/iconen/logobd.svg",
+          url: locatie[i].ic,
           scaledSize: new google.maps.Size(50, 50),
         }
      });
@@ -235,29 +384,33 @@ function initMap() {
      var opties = document.getElementById('checkbox');
 
      google.maps.event.addListener(locatiemarker, 'click', function() {
-       map.panTo(this.getPosition(), map.setZoom(13));
-       for (var i = 0; i < checkbox.length; i++) {
-         if (checkbox[i].checked) {
-          //  doe niets
-         }
-         else {
-           checkbox[i].click();
-         }
-       }
-       opties.className += ' checkbox2'
+       map.panTo(this.getPosition(), map.setZoom(10));
+       test()
      });
 
      google.maps.event.addListener(map, 'zoom_changed', function() {
        // hoofdstedenmarkers
        for (var i = 0; i < locatiemarkers.length; i++) {
-           if (map.getZoom() > 11) {
+           if (map.getZoom() >= 10) {
              locatiemarkers[i].setMap(null);
+             test();
            }
            else {
              locatiemarkers[i].setMap(map)
             //  opties.classList.remove("checkbox2");
            }
         }
+
+      // gemeentemarker
+      for (var i = 0; i < gemeentemarkers.length; i++) {
+        if (map.getZoom() < 10) {
+            gemeentemarkers[i].setMap(null)
+        }
+        else if (map.getZoom() > 11) {
+            gemeentemarkers[i].setMap(null)
+        }
+      }
+
       // gewone markers
       for (var i = 0; i < arr.length; i++) {
           if (map.getZoom() > 11) {
@@ -288,8 +441,6 @@ function initMap() {
       }
      });
   }
-
-     // /////////// einde test ///////////
 
   var checkbox = document.getElementsByTagName('input');
   var teller = 0;
