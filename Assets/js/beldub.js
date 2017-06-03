@@ -1,27 +1,32 @@
 var locatie = [{
    "id": "antwerpen",
    "lat": "51.2194",
-   "lng": "4.4025"
+   "lng": "4.4025",
+   "ic": "Assets/img/iconenProv/antwerpen.svg"
   },
   {
    "id": "hasselt",
    "lat": "50.9307",
-   "lng": "5.3325"
+   "lng": "5.3325",
+   "ic": "Assets/img/iconenProv/limburg.svg"
   },
   {
    "id": "gent",
    "lat": "51.0543",
-   "lng": "3.7174"
+   "lng": "3.7174",
+   "ic": "Assets/img/iconenProv/ovl.svg"
   },
   {
    "id": "brugge",
    "lat": "51.2093",
-   "lng": "3.2247"
+   "lng": "3.2247",
+   "ic": "Assets/img/iconenProv/wvl.svg"
   },
   {
-   "id": "brussel",
-   "lat": "50.8503",
-   "lng": "4.3517"
+   "id": "vlaamsbrabant",
+   "lat": "50.8815",
+   "lng": "4.5646",
+   "ic": "Assets/img/iconenProv/vlbra.svg"
 }]
 
 // DATA ARRAYS
