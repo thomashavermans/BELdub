@@ -1,0 +1,874 @@
+@font-face {
+    font-family: blackFont;
+    src: url("Assets/css/Swiss%2520721/Swiss721BlackCon");
+}
+
+@font-face {
+    font-family: boldFont;
+    src: url("Assets/css/Swiss%2520721/Swiss721BoldCon");
+}
+
+/***************HTML ELEMENTS***************/
+
+body {
+font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+p{
+    line-height: 2em;
+}
+
+h1,h2,h3{
+    line-height: 1.5em;
+}
+
+
+/***************HOME***************/
+
+#video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+.pattern {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -50;
+}
+
+#home {
+   padding-top: 20vh;
+}
+
+.homeNav ul{
+    margin-top: 5vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.homeNav ul a {
+    display: inline;
+font-family: blackFont , sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+
+
+}
+
+.homeNav ul a:hover, .homeNav ul a:focus, .homeNav ul a{
+    text-decoration: none;
+}
+
+.homeNav ul a li:nth-child(2) {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.homeText {
+    margin-top: 10vh;
+    font-family: 'Open Sans', sans-serif;
+font-size: 20px;
+    font-style: italic;
+    color: white;
+}
+
+
+/***************NAVIGATION***************/
+
+.navLogo{
+    margin-top: -20px;
+    height: 75px;
+    width: auto;
+}
+
+.nav ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.nav ul a {
+    text-decoration: none;
+    display: inline;
+    font-family: blackFont, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+}
+
+.active {
+    border-bottom: 5px solid seagreen ;
+}
+
+/***************DOCU & STORIES***************/
+
+/*****DOCU*****/
+
+@media screen and (max-width: 1170px) {
+    #videoplayer {
+        width: 663px;
+        height: 375px;
+    }
+}
+@media screen and (max-width: 700px) {
+    #videoplayer {
+        width: 442px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #videoplayer {
+        width: 354px;
+        height: 200px;
+    }
+}
+
+#docu,#stories,#pls_change_name {
+    margin-top: 8vh;
+}
+
+.docuFilm {
+    margin-top: 8vh;
+}
+
+.docuFilm {
+    margin-bottom: 8vh;
+}
+
+#docu h1, #over h1, #cast h1, #storytitle h1, #artist h1 {
+     font-family: blackFont, sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    color: black;
+    text-transform: uppercase;
+
+}
+#over h1 {
+    color: white;
+}
+#over {
+    color: white;
+    padding-top: 5vh;
+    background-color: #547F8C;
+    padding-bottom: 5vh;
+
+}
+
+
+
+#over h2 {
+    font-family: boldFont, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.teamImg {
+    width: 100%;
+    height: auto;
+    padding: 10%;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.imgOver {
+
+   display:block;
+    margin:auto;
+
+    text-align: center;
+    width: 75%;
+    height: auto;
+}
+
+.paddingOverLogo {
+    padding-top: 10vh;
+}
+
+@media screen and (max-width: 1170px){
+
+    .paddingOverLogo{
+        padding-top: 20vh;
+        display:block;
+    margin:auto;
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    .paddingOverLogo{
+
+        padding-top: 2vh;
+        width: 50%;
+    }
+}
+
+
+
+/* Parallax
+  --------------------------------------------- */
+
+
+.bgimg {
+    background-image: url(../img/AAAMASTER.png);
+    min-height: 400px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.quoteRow{
+
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: 900;
+}
+
+.overQuote{
+
+font-family: boldFont, sans-serif !important;
+
+}
+
+@media screen and (max-width: 510px){
+    .overQuote {
+        font-size: 30px;
+    }
+
+}
+
+#cast {
+    background-color: #547F8C;
+}
+#castGrid {
+    height: 150px;
+
+}
+
+#castGrid img {
+    width:  100%;
+
+}
+
+.castTitle{
+    margin-top: 7vh;
+        margin-bottom: 7vh;
+
+}
+
+.castTitle h1{
+    color: white !important;
+}
+
+.thumb {
+
+        height: 250px;
+    background-size: cover;
+}
+
+.chalice {
+    background-image: url(../img/CAST/CHALICE%20SOUNDSYSTEM%202.png);
+}
+
+.channelOne{
+    background-image: url(../img/CAST/CHANNEL%20ONE%20SOUNDSYSTEM.png);
+}
+
+.congo {
+    background-image: url(../img/CAST/CONGO%20ASHANTI%20ROY.png);
+}
+
+.crucialA {
+    background-image: url(../img/CAST/CRUCIAL%20ALPHONSO.png);
+}
+
+.crucialP {
+    background-image: url(../img/CAST/CRUCIAL%20P.png);
+}
+
+.drDog {
+    background-image: url(../img/CAST/DOCTOR%20DOG.png);
+}
+
+.donW {
+    background-image: url(../img/CAST/DON%20WACKIE.png);
+}
+
+.fatman{
+    background-image: url(../img/CAST/FATMAN%20.png);
+}
+
+.jahV {
+    background-image: url(../img/CAST/JAH%20VOICE%20SOUNDSYSTEM.png);
+}
+
+.jahmB{
+    background-image: url(../img/CAST/JAHMBASSADOR.png);
+}
+
+.KarelM {
+    background-image: url(../img/CAST/KAREL%20MICHIELS.png);
+}
+
+.kiangana {
+    background-image: url(../img/CAST/KIANGANA.png);
+}
+
+.kingF{
+    background-image: url(../img/CAST/KING%20FLASHMAN.png);
+}
+
+.coxsone{
+    background-image: url(../img/CAST/LLOYD%20COXSONE.png);
+}
+
+.benjie {
+    background-image: url(../img/CAST/LYRICAL%20BENJIE.png);
+}
+
+.missingL {
+    background-image: url(../img/CAST/MISSING%20LINK.png);
+}
+
+.nomadix {
+    background-image: url(../img/CAST/NOMADIX.png);
+}
+
+.panache{
+    background-image: url(../img/CAST/PANACHE%20CULTURE.png);
+}
+
+.profCat {
+    background-image: url(../img/CAST/PROFESSOR%20CAT.png);
+}
+
+.puraman{
+    background-image: url(../img/CAST/PURAMAN.png);
+}
+
+.radics{
+    background-image: url(../img/CAST/RADICS.png);
+}
+
+.rasM {
+    background-image: url(../img/CAST/RAS%20MUFFET.png);
+}
+
+.rigoV {
+    background-image: url(../img/CAST/RIGO%20VERWIMP.png);
+}
+
+.russD{
+    background-image: url(../img/CAST/RUSS%20D.png);
+}
+@media only screen and (max-width: 1500px) and (min-width: 1200px)  {
+
+    .thumb {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 475px){
+    .thumb {
+        height: 200px;
+    }
+}
+
+#cast h2 {
+    font-family: boldFont , sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+.gridImages {
+
+}
+.overlay{
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.thumb:nth-child(odd) .gridImages .overlay {
+
+  background-color: #547F8C;
+}
+.thumb:nth-child(even) .gridImages .overlay {
+
+  background-color: #90caa2;
+}
+
+.thumb:hover .overlay {
+  opacity: 0.85;
+}
+
+.hoverText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+/*****STORIES*****/
+#stories {
+    color: black;
+    margin-top: 8vh;
+    background-color: #FFFFFF;
+    margin-bottom: 5vh;
+
+}
+
+#storiesBody {
+    color: black;
+    background-color: #FFFFFF;
+    margin-top: 5vh;
+
+}
+
+#storytitle {
+    color: black;
+    margin-top: 5vh;
+    background-color: #FFFFFF;
+    margin-bottom: 0vh;
+}
+
+
+#auteur{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 3vh;
+    float: left;
+}
+
+#auteurDiv{
+    float: left;
+}
+
+
+@media screen and (max-width: 500px){
+    #auteur{
+        width: 50px;
+        height: 50px;
+        margin-bottom: 3vh;
+        float: left;
+
+    }
+
+
+}
+
+.clear{
+    clear: both;
+}
+.blogPost{
+    margin-bottom: 15vh;
+}
+
+
+.blogPostSumm, .blogPostText{
+    line-height: 2em;
+}
+
+.blogPostImg{
+    width: 100%;
+    height: auto;
+    margin: 2vh 0 3vh 0;
+}
+
+.blogPost h2{
+    font-family: boldFont, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+.readMore {
+    font-style: italic;
+
+}
+
+/******OLDER POSTS******/
+
+.row h3{
+    font-family: boldFont, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+#olderPosts{
+
+}
+
+#olderPosts h3:hover{
+    text-decoration: none;
+
+}
+
+
+.arrowDiv a li h3 :hover{
+    text-decoration: none;
+}
+
+.arrowDiv{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.arrowDiv :hover{
+    color: black;
+}
+.arrow{
+    width: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+
+
+
+.arrow i {
+    margin-left: auto;
+    margin-right:auto;
+    vertical-align: middle;
+}
+
+
+
+/*****BLOGPOST*****/
+.date{
+    line-height: auto;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: left;
+}
+.author{
+    line-height: auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5vh;
+}
+
+
+
+#image{
+    width: 100%;
+    height: auto;
+
+}
+
+/***************ARTIST***************/
+
+#artist {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#artist h2 {
+    font-family: boldFont, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 0;
+}
+
+.artistName{
+    margin-bottom: 5vh;
+
+}
+
+#artist ul {
+    width: 50%;
+    display: inline;
+    float: left;
+}
+
+.artistInfo {
+    color: white;
+}
+
+.artistInfoTitle{
+    font-family: boldFont, sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    text-transform: uppercase;
+    }
+
+.artistInfoTitle , .artistInfoBody {
+    margin-top: 5vh;
+}
+
+.artistInfoBody {
+    font-size: 15px;
+}
+
+.artistInfo,.artistImage {
+    padding: 20px;
+    background-color: #547F8C;
+}
+
+#artistWebsite {
+    color: white;
+
+   text-align: center;
+}
+
+.artistAbout {
+    box-sizing:border-box;
+    padding-left: 40px;
+
+}
+
+.artistSocial {
+    margin-top: 5vh;
+}
+
+
+
+/***************FOOTER***************/
+
+#footer {
+    background-color: #1d1d1b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.footer img{
+    max-height: 50px;
+    width: auto;
+}
+
+
+/* google maps */
+
+#pls_change_name {
+  margin: 40px 0 20px 0;
+}
+
+#map {
+  height: calc(100vh - 115px);
+  width: 100%;
+}
+
+.checkbox {
+  height: calc(100vh - 115px);
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute !important;
+  top: 105px;
+  z-index: 100;
+  visibility: visible;
+  width: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.checkbox2 {
+  padding: 15px !important;
+  width: 300px !important;
+}
+
+input {
+  position: relative !important;
+  right:0;
+  float: right;
+}
+
+ul {
+  margin: 0 !important
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+
+/* MODAL VOOR MAP */
+
+.modalmap {
+  position: absolute !important;
+  top: 115px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: 350ms;
+}
+
+.modalmap_inner {
+  z-index: 500;
+  width: 600px;
+  height: 500px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #E9E6E6;
+  border-radius: 6px;
+  padding: 30px;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+.modalmap_inner_topcontent {
+    overflow: auto;
+}
+
+.content_left, .content_right {
+  padding: 0px !important;
+}
+
+.content_right {
+  padding-left: 20px !important;
+}
+
+.content_right a {
+    color: #7DC494;
+    transition: 200ms;
+}
+
+.content_right a:hover {
+  text-decoration: none;
+  color: #609972;
+}
+
+#artistimg {
+  width: 100%;
+}
+
+.infocontent {
+  height: 100%;
+}
+
+#name {
+  font-size: 1.5em;
+  hyphens: none;
+  font-weight: bold;
+  margin-bottom: 0 !important
+}
+
+#filter {
+  opacity: 0.8;
+}
+
+#about {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#filterbutton {
+  display: none;
+}
+/* Media Queries Mobiel */
+
+@media (max-width: 768px) {
+
+  /* MAP */
+
+  .checkbox {
+    top: 127px;
+    height: 0;
+    width: 100% !important;
+    padding: 20px 30px 15px 30px !important;
+    visibility: hidden;
+  }
+
+  #filterbutton {
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    background-color: white;
+    border: 1px solid white;
+    padding: 15px 0;
+    font-size: 1.3em;
+    position: absolute;
+    top: 100px;
+  }
+
+  .modalmap {
+    padding: 10px !important;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .modalmap_inner {
+    width: 90%;
+  }
+}
+
+@media (max-width: 340px) {
+  .modalmap_inner {
+    height: 400px;
+  }
+
+  .content_left {
+    width: 100%;
+  }
+  .content_right {
+    padding-left: 0 !important;
+    text-align: center;
+    width: 100%;
+  }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BelDub</title>
+	<link href="Assets/css/reset.css" rel="stylesheet" type="text/css"><!-- Latest compiled and minified CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><!-- Optional theme -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="Assets/css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+</head>
+<body>
+  <!--NAVIGATION-->
+  <section id="pls_change_name" class="container-fluid content-section">
+       <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 nav">
+                <ul>
+                    <a href="index.html"><img class="navLogo" src="Assets/img/Beldub.png"></a>
+
+                    <a href="docu.html"><li>DOCU</li></a>
+
+                    <a href="stories.html"><li>STORIES</li></a>
+
+                    <a href="map.html" class="active"><li>MAP</li></a>
+                </ul>
+           </div>
+        </div>
+    </section>
+
+
+    <!--MAP-->
+
+			<div id="map" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			</div>
+
+			<div class="modalmap">
+				<div class="modalmap_inner">
+					<div class="modalmap_inner_topcontent">
+						<div class="content_left col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+								<img id="artistimg" class="" src="" alt="id_image">
+						</div>
+						<div class="content_right col-xs-8 col-sm-8 col-md-8 col-lg-8">
+								<p id="name"></p>
+								<p id="filter"></p>
+								<a target="_blank" href="" id="website"></a>
+						</div>
+						<div class="bottomcontent col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<p id="about"></p>
+							<p id="info"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<button type="options" name="options" id="filterbutton">Filters</button>
+
+			<div id="checkbox" class="checkbox ">
+				<ul id= "filterlinks" class="links col-sm-12">
+					<li class="col-sm-12">Producers<input type="checkbox" class="myCheck" id="producers"></li>
+					<li class="col-sm-12">soundsystem pioneers<input type="checkbox" class="myCheck" id="soundpioneer"></li>
+					<li class="col-sm-12">Soundsystems<input type="checkbox" class="myCheck" id="soundsystems"></li>
+					<li class="col-sm-12">DJ's<input type="checkbox" class="myCheck" id="DJs"></li>
+					<li class="col-sm-12">Radioshows<input type="checkbox" class="myCheck" id="radioshows"></li>
+					<li class="col-sm-12">Studio's<input type="checkbox" class="myCheck" id="studios"></li>
+					<li class="col-sm-12">Muzikanten / Bands<input type="checkbox" class="myCheck" id="muzikanten"></li>
+					<li class="col-sm-12">Promoters / Festivals<input type="checkbox" class="myCheck" id="promoters"></li>
+				</ul>
+			</div>
+
+
+
+   <!--FOOTER-->
+   <!-- <section class="container-fluid content-section" id="footer">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 footer"><a href="index.html"><img src="Assets/img/Logo%20neg.png"></a></div>
+		</div>
+	</section> -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+
+	<!-- GOOGLE MAPS + -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfS48ZKRk8c_xEUXfV3TddpvH38aTX1EE&callback=initMap" type="text/javascript"></script>
+  <script type="text/javascript" src="Assets/js/beldub.js"></script>
+</body>
+
+</html>
