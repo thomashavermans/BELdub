@@ -500,7 +500,7 @@ var vocalists = [{
 }];
 
 var promoters = [{
-  "id": "promotors",
+  "id": "promoters",
   "artiest": "CACTUS MUZIEKCENTRUM",
   "artiestimg": "www.cactusmusic.be/css/front/img/toplogo.svg",
   "info": "Cactus Muziekcentrum vzw is een professioneel muziekcentrum met aandacht voor een grote diversiteit aan mondiale muziekcultuur: van rock, elektronica en dub over hiphop, roots en reggae naar dubstep en drum 'n' bass. Cactus Club (in de Magdalenazaal/MaZ te Brugge) is de vaste concertstek waar Cactus Muziekcentrum tijdens het jaar het grootste deel van zijn concertwerking realiseert. Af en toe wijken we ook uit naar het Concertgebouw of de Stadschouwburg. Cactus Club heeft een totale capaciteit van max. 900 personen maar voor kleinere concerten bouwen we de zaal om tot een knusse concertclub.",
@@ -510,7 +510,7 @@ var promoters = [{
   "lng": "3.203258300000016 "
 },
 {
-  "id": "promotors",
+  "id": "promoters",
   "artiest": "Vibes Kitchen vzw",
   "artiestimg": "scontent.fbru1-1.fna.fbcdn.net/v/t1.0-9/13718719_1226648860692936_2893172684972422147_n.jpg?oh=6853e3e543ab0365ee488d1fb7b9bd54&oe=59E1D6A1",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum risus at ante egestas feugiat. Suspendisse velit lacus, euismod vitae mi at, ullamcorper blandit velit. Nulla eleifend faucibus mi sed ornare. Ut auctor velit orci, non eleifend nulla fringilla sed. Aliquam in venenatis nisi. Etiam felis felis, lobortis quis odio non, sagittis molestie nulla. Morbi non congue nibh. Aliquam at euismod sapien. In in odio sagittis, lacinia metus id, cursus ex. Vestibulum urna orci, bibendum non tortor nec, interdum elementum libero",
@@ -520,7 +520,7 @@ var promoters = [{
   "lng": "3.7427284999999983"
 },
 {
-  "id": "promotors",
+  "id": "promoters",
   "artiest": "Live & Direct",
   "artiestimg": "www.liveanddirect.be/images/L&D_header7.png",
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum risus at ante egestas feugiat. Suspendisse velit lacus, euismod vitae mi at, ullamcorper blandit velit. Nulla eleifend faucibus mi sed ornare. Ut auctor velit orci, non eleifend nulla fringilla sed. Aliquam in venenatis nisi. Etiam felis felis, lobortis quis odio non, sagittis molestie nulla. Morbi non congue nibh. Aliquam at euismod sapien. In in odio sagittis, lacinia metus id, cursus ex. Vestibulum urna orci, bibendum non tortor nec, interdum elementum libero",
@@ -530,7 +530,7 @@ var promoters = [{
   "lng": "3.742930300000012"
 },
 {
-  "id": "promotors",
+  "id": "promoters",
   "artiest": "ROOTS VIBRATION",
   "artiestimg": "rootsvibration.tripod.com/images/rootscrew2.jpg",
   "info": "Roots Vibration is a musical force that provides authentic Caribbean music. Made up of members from the exotic islands of the Caribbean and the funky streets of Detroit, this band will stimulate your senses with positive roots music. Roots Vibration’s sound is uplifting and fun, and features creative and seasoned musicians who have a multigenerational and multinational appeal. They bring decades of experience and authenticity to the Reggae scene.",
@@ -540,7 +540,7 @@ var promoters = [{
   "lng": "4.722569000000021"
 },
 {
-  "id": "promotors",
+  "id": "promoters",
   "artiest": "ROOTS & CULTURE",
   "artiestimg": "scontent.fbru1-1.fna.fbcdn.net/v/t1.0-9/16406742_610304645842484_8332117360481301455_n.jpg?oh=724622f190e36a2366ac01df5c039409&oe=59A58741",
   "info": "Roots & Culture started as a cooperation of some Antwerp Dubheads & Roots lovers. Unlisted Fanatic & Crucial Alphonso are now concentrating mainly on their studio & live work. JB sound is very active with their Ska & Rocksteady act called 'the Dukes of Skazzard and Missing Link' is an MC who is asked all over the country on soundsystem dances. Together with Roots Pressure they started the Roots & Culture dances in Antwerp. Now the organizing is in the hands of Roots Pressure but we still work together to make the Soundsystem scene bigger in Antwerp!",
