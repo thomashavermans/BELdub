@@ -250,7 +250,7 @@ var soundpioneer = [{
   "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum risus at ante egestas feugiat. Suspendisse velit lacus, euismod vitae mi at, ullamcorper blandit velit. Nulla eleifend faucibus mi sed ornare. Ut auctor velit orci, non eleifend nulla fringilla sed. Aliquam in venenatis nisi. Etiam felis felis, lobortis quis odio non, sagittis molestie nulla. Morbi non congue nibh. Aliquam at euismod sapien. In in odio sagittis, lacinia metus id, cursus ex. Vestibulum urna orci, bibendum non tortor nec, interdum elementum libero",
   "website": "website",
   "weblink": "www.google.com",
-  "lat": "51.2194475",
+  "lat": "51.2594475",
   "lng": "4.40246430000002"
 }];
 
