@@ -974,11 +974,11 @@ input {
   float: right;
 }
 
-#filterlinks {
+ul {
   margin: 0 !important
 }
 
-#filterlinks li {
+ul li {
   margin-bottom: 10px;
 }
 
@@ -1026,6 +1026,13 @@ input {
   padding: 0px !important;
 }
 
+.content_left {
+  background-position: center;
+  background-size: cover;
+  height: 190px !important;
+
+}
+
 .content_right {
   padding-left: 20px !important;
 }
@@ -1040,8 +1047,8 @@ input {
   color: #609972;
 }
 
-#artistimg {
-  width: 100%;
+.bottomcontent {
+  padding: 0 !important
 }
 
 .infocontent {
@@ -1073,7 +1080,6 @@ input {
 @media (max-width: 768px) {
 
   /* MAP */
-
   .checkbox {
     top: 127px;
     height: 0;
@@ -1102,6 +1108,13 @@ input {
   .modalmap_inner {
     width: 90%;
   }
+
+  .content_right {
+    padding-left: 0 !important;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px
+  }
 }
 
 @media (max-width: 340px) {
@@ -1110,11 +1123,13 @@ input {
   }
 
   .content_left {
-    width: 100%;
+    height: auto;
   }
+
   .content_right {
     padding-left: 0 !important;
-    text-align: center;
+    text-align: left;
     width: 100%;
+    margin-bottom: 20px
   }
 }
