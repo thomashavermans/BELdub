@@ -578,7 +578,8 @@ function initMap() {
 
 var gemeentemarkers = [];
 
-function test() {
+// aanmaken gemeentemarkers
+function gemeente() {
   for (var i = 0; i < provinciemark.length; i++) {
     var gemeentemarker = new google.maps.Marker({
         position: {
@@ -610,6 +611,7 @@ function test() {
 
   var locatiemarkers = [];
 
+  // aanmaken provinciemarkers
   for (var i = 0; i < locatie.length; i++) {
     var locatiemarker = new google.maps.Marker({
         position: {
@@ -626,9 +628,10 @@ function test() {
 
      var opties = document.getElementById('checkbox');
 
+    //  aanmaken van gemeentemarkers wanneer er op provinciemarker wordt geklikt
      google.maps.event.addListener(locatiemarker, 'click', function() {
        map.panTo(this.getPosition(), map.setZoom(10));
-       test()
+       gemeente()
      });
 
      google.maps.event.addListener(map, 'zoom_changed', function() {
@@ -636,11 +639,10 @@ function test() {
        for (var i = 0; i < locatiemarkers.length; i++) {
            if (map.getZoom() >= 10) {
              locatiemarkers[i].setMap(null);
-             test();
+             gemeente();
            }
            else {
              locatiemarkers[i].setMap(map)
-            //  opties.classList.remove("checkbox2");
            }
         }
 
@@ -664,11 +666,11 @@ function test() {
           }
       }
 
+      // automatisch aanvinken van checkboxes
       for (var i = 0; i < checkbox.length; i++) {
         if (map.getZoom() === 12) {
           console.log(true);
           if (checkbox[i].checked) {
-
           }
           else {
             checkbox[i].click();
@@ -696,7 +698,7 @@ function test() {
   var teller8 = 0;
   var teller9 = 0;
 
-  // VEEL TE SLORDIGE CODE MOET COMPACTER
+  // VEEL TE OMSLACHTIGE CODE MOET COMPACTER
 
   for (var i = 0; i < checkbox.length; i++) {
     checkbox[i].onclick = function() {
@@ -868,6 +870,7 @@ function createMarker(map, data, icon) {
       document.getElementById('website').href = "http://" + this.weblink;
     });
 
+    // verwijderen van modal wanneer er naast modal wordt geklikt
     window.onclick = function(event) {
         if (event.target == modal) {
           modal.style.opacity = 0;
@@ -878,7 +881,7 @@ function createMarker(map, data, icon) {
   }
 }
 
-// VERWIJDEREN VAN MARKERS
+// VERWIJDEREN VAN MARKERS via checkbox
 
 function deletemarker(id) {
     var teverwijderen = [id];
@@ -894,7 +897,6 @@ function deletemarker(id) {
 };
 
 // responsive openen van filters map menu
-
 var filter = document.getElementById('filterbutton');
 var links = document.getElementById('checkbox');
 
