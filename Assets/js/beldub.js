@@ -911,6 +911,5 @@ filter.onclick = function gijzultopenen() {
     links.style.height = 'auto';
     links.style.visibility = "visible";
     filter.innerHTML = "Sluiten";
-    filter.style.borderBottom = "2px solid #B7B6B6"
   }
 }
