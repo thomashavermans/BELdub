@@ -1075,6 +1075,12 @@ ul li {
 #filterbutton {
   display: none;
 }
+
+#icons{
+  height: 20px;
+  margin: 5px;
+}
+
 /* Media Queries Mobiel */
 
 @media (max-width: 768px) {
