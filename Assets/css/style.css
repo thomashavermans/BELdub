@@ -39,6 +39,11 @@ span{
     display: block;
 }
 /***************HOME***************/
+#logoHome {
+  width: 175px;
+  height: auto;
+  margin-bottom: 50px;
+}
 
 #video-background {
   position: fixed;
@@ -63,28 +68,48 @@ span{
 }
 
 #home {
-   padding-top: 20vh;
+  display: table;
+  height: 100vh;
+}
+
+.vertical-center {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .homeNav ul{
-    margin-top: 5vh;
     text-align: center;
     display: flex;
     justify-content: space-around;
 }
 
 .homeNav ul a {
-    display: inline;
-font-family: blackFont , sans-serif;
+    display: inline-block;
+    font-family: blackFont , sans-serif;
     font-size: 25px;
     font-weight: 900;
     color: white;
-
-
+    transition: 250ms;
 }
 
-.homeNav ul a:hover, .homeNav ul a:focus, .homeNav ul a{
-    text-decoration: none;
+.homeNav ul a:after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.homeNav ul a:hover:after {
+  width: 100%;
+  background: white;
+}
+
+.homeNav ul a:hover {
+  text-decoration: none;
+  opacity: 0.9;
+  color: #7DC494;
 }
 
 .homeNav ul a li:nth-child(2) {
@@ -93,10 +118,10 @@ font-family: blackFont , sans-serif;
 }
 
 .homeText {
-    margin-top: 10vh;
+    margin-top: 35px;
     font-family: 'Open Sans', sans-serif;
-font-size: 20px;
-    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
     color: white;
 }
 
