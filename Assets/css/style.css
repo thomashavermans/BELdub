@@ -130,7 +130,7 @@ span{
 
 .navLogo{
     margin-top: -20px;
-    height: 75px;
+    height: 50px;
     width: auto;
 }
 
@@ -157,36 +157,46 @@ span{
 
 /*****DOCU*****/
 
-@media screen and (max-width: 1170px) {
-    #videoplayer {
-        width: 663px;
-        height: 375px;
-    }
+.navkol {
+  z-index: 100000;
+  background-color: rgba(255, 255, 255, 1);
+  position: fixed;
+  top: 0;
+  padding-top: 40px;
+  width: 100%;
+  display: table;
 }
-@media screen and (max-width: 700px) {
-    #videoplayer {
-        width: 442px;
-        height: 250px;
-    }
+
+.navkol ul li {
+  margin-bottom: 20px;
 }
-@media screen and (max-width: 480px) {
+
+#videoplayer {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
     #videoplayer {
-        width: 354px;
-        height: 200px;
+        width: 100%;
     }
 }
 
-#docu,#stories {
+#stories {
     margin-top: 8vh;
 }
 
-.docuFilm {
-    margin-top: 8vh;
+#docu {
+  padding-top: 14vh;
+  background-color: black;
 }
 
 .docuFilm {
-    margin-bottom: 8vh;
+    margin: 8vh 0;
+    width: 100%;
 }
+
 
 #docu h1, #over h1, #cast h1, #storytitle h1, #artist h1 {
      font-family: blackFont, sans-serif;
@@ -199,20 +209,22 @@ span{
 #over h1 {
     color: white;
 }
+
 #over {
     color: white;
-    padding-top: 5vh;
+    padding-top: 7vh;
+    padding-bottom: 2vh;
     background-color: #547F8C;
-    padding-bottom: 5vh;
-
 }
-
-
 
 #over h2 {
     font-family: boldFont, sans-serif;
     font-size: 30px;
     font-weight: 900;
+}
+
+.andreas {
+  margin: 30px 0 40px 0;
 }
 
 .teamImg {
@@ -230,38 +242,12 @@ span{
 }
 
 .imgOver {
-
-   display:block;
-    margin:auto;
-
+    display: block;
+    margin: auto;
     text-align: center;
     width: 75%;
     height: auto;
 }
-
-.paddingOverLogo {
-    padding-top: 10vh;
-}
-
-@media screen and (max-width: 1170px){
-
-    .paddingOverLogo{
-        padding-top: 20vh;
-        display:block;
-    margin:auto;
-    }
-}
-
-@media screen and (max-width: 767px){
-
-    .paddingOverLogo{
-
-        padding-top: 2vh;
-        width: 50%;
-    }
-}
-
-
 
 /* Parallax
   --------------------------------------------- */
@@ -275,9 +261,6 @@ span{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.quoteRow{
-
 }
 
 .caption {
@@ -352,8 +335,8 @@ font-family: boldFont, sans-serif !important;
 }
 
 .thumb {
-
-        height: 250px;
+    text-align: center;
+    height: 250px;
     background-size: cover;
 }
 
@@ -363,12 +346,12 @@ font-family: boldFont, sans-serif !important;
 
 .channelOne{
     background-image: url(../img/CAST/CHANNEL%20ONE%20SOUNDSYSTEM.png);
-    background-position: -50px;
+    background-position: -90px;
 }
 
 .congo {
     background-image: url(../img/CAST/CONGO%20ASHANTI%20ROY.png);
-    background-position: -25px;
+    background-position: -55px;
 }
 
 .crucialA {
@@ -402,7 +385,7 @@ font-family: boldFont, sans-serif !important;
 
 .KarelM {
     background-image: url(../img/CAST/KAREL%20MICHIELS.png);
-    background-position: -50px;
+    background-position: -80px;
 }
 
 .kiangana {
@@ -739,8 +722,7 @@ font-family: boldFont, sans-serif !important;
 #storiesBody {
     color: black;
     background-color: #FFFFFF;
-    margin-top: 5vh;
-
+    padding-top: 150px;
 }
 
 #storytitle {
@@ -769,17 +751,15 @@ font-family: boldFont, sans-serif !important;
         height: 50px;
         margin-bottom: 3vh;
         float: left;
-
     }
-
-
 }
 
 .clear{
     clear: both;
 }
+
 .blogPost{
-    margin-bottom: 15vh;
+    margin-bottom: 5vh;
 }
 
 
@@ -787,10 +767,11 @@ font-family: boldFont, sans-serif !important;
     line-height: 2em;
 }
 
-.blogPostImg{
-    width: 100%;
-    height: auto;
+.blogpostimg{
+    height: 200px;
     margin: 2vh 0 3vh 0;
+    background-image: url("../img/Crucial_Alphonso.jpeg");
+    background-position: center;
 }
 
 .blogPost h2{
@@ -802,7 +783,14 @@ font-family: boldFont, sans-serif !important;
 
 .readMore {
     font-style: italic;
+    color: seagreen;
+    transition: all 250ms;
+}
 
+.readMore:hover  {
+  text-decoration: none;
+  color: seagreen;
+  opacity: 0.8;
 }
 
 /******OLDER POSTS******/
@@ -813,60 +801,34 @@ font-family: boldFont, sans-serif !important;
     font-weight: 600;
     text-align: center;
     margin: 0 auto;
+    color: seagreen;
 }
 
-
-#olderPosts{
-
+.older {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-#olderPosts h3:hover{
-    text-decoration: none;
-
+.older a:hover {
+  text-decoration: none;
 }
-
-
-.arrowDiv a li h3 :hover{
-    text-decoration: none;
-}
-
-.arrowDiv{
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.arrowDiv :hover{
-    color: black;
-}
-.arrow{
-    width: inherit;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-
-
-
-
-
-.arrow i {
-    margin-left: auto;
-    margin-right:auto;
-    vertical-align: middle;
-}
-
-
 
 /*****BLOGPOST*****/
-.date{
+.blogpostv2 {
+  margin-top: 100px;
+}
+
+.blogpostimgv2 {
+  margin-bottom: 25px;
+}
+
+.date {
     line-height: auto;
     font-size: 1.2rem;
     font-style: italic;
     text-align: left;
 }
+
 .author{
     line-height: auto;
     font-size: 1.2rem;
@@ -1162,5 +1124,92 @@ ul li {
     text-align: left;
     width: 100%;
     margin-bottom: 20px
+  }
+}
+
+.nav-responsive {
+  display: none;
+  padding: 0px 30px;
+  position: fixed;
+  top: 0;
+  height: auto;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background-color: white;
+}
+
+.glyphicon {
+  font-size: 1.5em;
+  transition: all 1s;
+}
+
+#dropdown_nav {
+  float: right;
+  margin-top: 27.5px;
+  border: 0;
+  background-color: white;
+}
+
+.dropdown {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  z-index: 10000;
+  height: 0px;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.dropdown ul {
+  padding: 20px 0;
+  text-align: center;
+  background-color: seagreen;
+}
+
+.dropdown ul a li {
+  margin-bottom: 0px;
+  padding: 30px 0px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.specialone {
+  padding: 0px !important;
+}
+
+@media (max-width: 768px) {
+  .navkol {
+    display: none;
+  }
+
+  .nav-responsive {
+    display: block;
+  }
+
+  .nav-responsive img {
+    margin: 15px 0;
+  }
+
+  .docuFilm {
+    margin-top: -3vh !important;
+  }
+
+  .pad {
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+  }
+
+  .align-right {
+    text-align: left;
+  }
+
+  .andreas div {
+    padding: 0px !important
+  }
+
+  .teamImg {
+    padding: 10% 0;
   }
 }
