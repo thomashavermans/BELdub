@@ -1213,3 +1213,21 @@ ul li {
     padding: 10% 0;
   }
 }
+
+@media (max-width: 450px) {
+  #logoHome {
+    width: 100px;
+  }
+
+  .homeNav li {
+    font-size: 0.9em;
+  }
+
+  .homeText {
+    padding: 0 30px !important
+  }
+
+  .homeText p {
+    font-size: 0.9em;
+  }
+}
