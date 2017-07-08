@@ -951,16 +951,39 @@ font-family: boldFont, sans-serif !important;
   width: 100%;
 }
 
-.checkbox {
-  height: calc(100vh - 115px);
+.navmap, .navmapres {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s;
+}
+
+.navmapres {
+  height: 93px !important;
+}
+
+#menu-nav {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  z-index: 9999;
+  transition: all 1s;
+  padding: 10px 30px;
+  background-color: white;
+  font-weight: bold;
+}
+
+.checkboxx {
+  height: 100vh;
   background-color: rgba(255, 255, 255, 0.95);
   position: absolute !important;
-  top: 105px;
   z-index: 100;
   visibility: visible;
   width: 0 !important;
-  padding: 0 !important;
   overflow: hidden;
+}
+
+#checkbox {
+  padding-top: 100px !important;
 }
 
 .checkbox2 {
@@ -987,7 +1010,7 @@ ul li {
 
 .modalmap {
   position: absolute !important;
-  top: 115px;
+  top: 90px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -1086,24 +1109,28 @@ ul li {
 @media (max-width: 768px) {
 
   /* MAP */
-  .checkbox {
-    top: 127px;
+  .checkboxx {
+    bottom: 40px;
     height: 0;
     width: 100% !important;
-    padding: 20px 30px 15px 30px !important;
+    padding: 0px 30px 15px 30px !important;
     visibility: hidden;
+  }
+
+  #checkbox {
+    padding-top: 30px !important;
   }
 
   #filterbutton {
     margin: 0 auto;
     width: 100%;
-    display: block;
+    display: none;
     background-color: white;
     border: 1px solid white;
     padding: 15px 0;
     font-size: 1.3em;
     position: absolute;
-    top: 100px;
+    bottom: 0;
   }
 
   .modalmap {
@@ -1250,5 +1277,9 @@ ul li {
 
   #auteurDiv {
     display: none;
+  }
+
+  #menu-nav {
+    right: 20%;
   }
 }

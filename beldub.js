@@ -663,13 +663,14 @@ function gemeente() {
           }
           else {
             arr[i].setMap(null);
+            filter.style.display = 'none';
           }
       }
 
       // automatisch aanvinken van checkboxes
       for (var i = 0; i < checkbox.length; i++) {
         if (map.getZoom() === 12) {
-          console.log(true);
+          filter.style.display = 'block';
           if (checkbox[i].checked) {
           }
           else {
