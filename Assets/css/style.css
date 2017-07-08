@@ -719,8 +719,6 @@ font-family: boldFont, sans-serif !important;
   -ms-transform: translate(-50%, -50%);
 }
 
-
-
 /*****STORIES*****/
 #stories {
     color: black;
@@ -733,7 +731,11 @@ font-family: boldFont, sans-serif !important;
 #storiesBody {
     color: black;
     background-color: #FFFFFF;
-    padding-top: 150px;
+    padding: 0 !important;
+}
+
+.stories-filter {
+  padding: 150px 30px 0px 30px;
 }
 
 #storytitle {
@@ -1242,7 +1244,7 @@ ul li {
     font-size: 0.9em;
   }
 
-  #storiesBody {
+  .stories-filter {
     padding-top: 100px !important;
   }
 
