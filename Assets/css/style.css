@@ -947,7 +947,7 @@ font-family: boldFont, sans-serif !important;
 }
 
 #map {
-  height: calc(100vh - 115px);
+  height: 100vh;
   width: 100%;
 }
 

@@ -15,18 +15,30 @@
 </head>
 <body>
   <!--NAVIGATION-->
-  <section id="pls_change_name" class="container-fluid content-section">
-       <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 nav">
-                <ul>
-                    <a href="index.html"><img class="navLogo" src="Assets/img/Beldub.png"></a>
-                    <a href="docu.html"><li>DOCU</li></a>
-                    <a href="stories.html"><li>STORIES</li></a>
-                    <a href="map.html" class="active"><li>MAP</li></a>
-                </ul>
-           </div>
-        </div>
-    </section>
+	<div class="navkol">
+			 <div class="col-lg-8 col-lg-offset-2 nav">
+					 <ul>
+							 <a href="index.html"><img class="navLogo" src="Assets/img/Beldub.png"></a>
+							 <a href="docu.html"><li>DOCU</li></a>
+							 <a href="stories.html"><li>STORIES</li></a>
+							 <a href="map.html" class="active"><li>MAP</li></a>
+					 </ul>
+			</div>
+	 </div>
+
+	 <div class="nav-responsive">
+				<a href="index.html"><img class="navLogo" src="Assets/img/Beldub.png"></a>
+				<button type="dropdown_nav" name="dropdown_nav" id="dropdown_nav">
+						<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+				</button>
+		</div>
+		<div class="dropdown">
+				<ul>
+						<a href="docu.html"><li>DOCU</li></a>
+						<a href="stories.html"><li class="specialone">STORIES</li></a>
+						<a href="map.html"><li>MAP</li></a>
+				</ul>
+		</div>
 
 
     <!--MAP-->
@@ -73,6 +85,7 @@
 	<!-- GOOGLE MAPS + -->
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfS48ZKRk8c_xEUXfV3TddpvH38aTX1EE&callback=initMap" type="text/javascript"></script>
   <script type="text/javascript" src="beldub.js"></script>
+	<script type="text/javascript" src="belstyle.js"></script>
 </body>
 
 </html>
