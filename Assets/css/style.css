@@ -150,7 +150,7 @@ span{
 }
 
 .active {
-    border-bottom: 5px solid seagreen ;
+    border-bottom: 5px solid #84CBA3 ;
 }
 
 /***************DOCU & STORIES***************/
@@ -783,13 +783,13 @@ font-family: boldFont, sans-serif !important;
 
 .readMore {
     font-style: italic;
-    color: seagreen;
+    color: #84CBA3;
     transition: all 250ms;
 }
 
 .readMore:hover  {
   text-decoration: none;
-  color: seagreen;
+  color: #84CBA3;
   opacity: 0.8;
 }
 
@@ -801,7 +801,7 @@ font-family: boldFont, sans-serif !important;
     font-weight: 600;
     text-align: center;
     margin: 0 auto;
-    color: seagreen;
+    color: #84CBA3;
 }
 
 .older {
@@ -1164,7 +1164,7 @@ ul li {
 .dropdown ul {
   padding: 20px 0;
   text-align: center;
-  background-color: seagreen;
+  background-color: #84CBA3;
 }
 
 .dropdown ul a li {
@@ -1229,5 +1229,13 @@ ul li {
 
   .homeText p {
     font-size: 0.9em;
+  }
+
+  #storiesBody {
+    padding-top: 100px !important;
+  }
+
+  #auteurDiv {
+    display: none;
   }
 }
