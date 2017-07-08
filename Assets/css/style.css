@@ -264,17 +264,28 @@ span{
 }
 
 .caption {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    display: table;
+    height: 480px;
     width: 100%;
     text-align: center;
     color: white;
     font-size: 50px;
-
     text-transform: uppercase;
     letter-spacing: .2em;
     font-weight: 900;
+    background-color: rgba(132, 203, 163, 0.3)
+}
+
+.caption p {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+@media (max-width: 769px) {
+  .caption {
+    height: 240px;
+  }
 }
 
 .overQuote{
