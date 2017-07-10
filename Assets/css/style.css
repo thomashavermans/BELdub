@@ -963,8 +963,8 @@ font-family: boldFont, sans-serif !important;
 
 #menu-nav {
   position: absolute;
-  top: 0;
-  right: 10%;
+  top: 10px;
+  right: 10px;
   z-index: 9999;
   transition: all 1s;
   padding: 10px 30px;
@@ -1010,12 +1010,12 @@ ul li {
 
 .modalmap {
   position: absolute !important;
-  top: 90px;
+  top: 0px;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1000;
+  z-index: 200000;
   opacity: 0;
   visibility: hidden;
   transition: 350ms;
@@ -1150,9 +1150,9 @@ ul li {
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 450px) {
   .modalmap_inner {
-    height: 400px;
+    height: 90vh;
   }
 
   .content_left {
@@ -1280,6 +1280,7 @@ ul li {
   }
 
   #menu-nav {
-    right: 20%;
+    right: 10px;
+    top: 10px;
   }
 }
