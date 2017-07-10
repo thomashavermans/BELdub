@@ -642,7 +642,7 @@ function gemeente() {
              gemeente();
            }
            else {
-             locatiemarkers[i].setMap(map)
+             locatiemarkers[i].setMap(map);
            }
         }
 
@@ -663,14 +663,12 @@ function gemeente() {
           }
           else {
             arr[i].setMap(null);
-            filter.style.display = 'none';
           }
       }
 
       // automatisch aanvinken van checkboxes
       for (var i = 0; i < checkbox.length; i++) {
         if (map.getZoom() === 12) {
-          filter.style.display = 'block';
           if (checkbox[i].checked) {
           }
           else {
@@ -680,7 +678,7 @@ function gemeente() {
        }
 
       if (map.getZoom() >= 12) {
-        opties.className += ' checkbox2'
+        opties.className += ' checkbox2';
       }
       else {
         opties.classList.remove("checkbox2");

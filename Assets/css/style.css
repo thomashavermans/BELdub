@@ -1095,13 +1095,13 @@ ul li {
   margin-top: 15px;
 }
 
-#filterbutton {
-  display: none;
-}
-
 #icons{
   height: 20px;
   margin: 5px;
+}
+
+#filterbutton {
+  display: none;
 }
 
 /* Media Queries Mobiel */
@@ -1122,9 +1122,8 @@ ul li {
   }
 
   #filterbutton {
-    margin: 0 auto;
     width: 100%;
-    display: none;
+    display: block;
     background-color: white;
     border: 1px solid white;
     padding: 15px 0;
