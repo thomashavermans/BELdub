@@ -680,12 +680,8 @@ font-family: boldFont, sans-serif !important;
     font-weight: 900;
 }
 
-
-.gridImages {
-
-}
-.overlay{
-    position: absolute;
+.overlay {
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -697,16 +693,16 @@ font-family: boldFont, sans-serif !important;
 }
 
 .thumb:nth-child(odd) .gridImages .overlay {
-
   background-color: #547F8C;
 }
-.thumb:nth-child(even) .gridImages .overlay {
 
+.thumb:nth-child(even) .gridImages .overlay {
   background-color: #90caa2;
 }
 
 .thumb:hover .overlay {
-  opacity: 0.85;
+  opacity: 0.9;
+  cursor: pointer
 }
 
 .hoverText {
@@ -717,6 +713,7 @@ font-family: boldFont, sans-serif !important;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  font-weight: bold;
 }
 
 /*****STORIES*****/
@@ -1019,6 +1016,21 @@ ul li {
   opacity: 0;
   visibility: hidden;
   transition: 350ms;
+}
+
+.modaldocu {
+  position: fixed !important;
+}
+
+.docu-foto {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+
+.modalinnerdocu {
+  width: 800px !important;
+  height: 600px !important;
 }
 
 .modalmap_inner {
