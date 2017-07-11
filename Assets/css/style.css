@@ -188,8 +188,16 @@ span{
 }
 
 #docu {
-  padding-top: 14vh;
+  padding-top: 90px;
+  display: table;
+  width: 100%;
+  height: 100vh;
   background-color: black;
+}
+
+.docualign {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .docuFilm {
@@ -1020,17 +1028,14 @@ ul li {
 
 .modaldocu {
   position: fixed !important;
+  /*background: linear-gradient(to bottom right, black, #84CBA3); */
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .docu-foto {
    object-fit: cover;
    width: 100%;
    height: 100%;
-}
-
-.modalinnerdocu {
-  width: 800px !important;
-  height: 600px !important;
 }
 
 .modalmap_inner {
