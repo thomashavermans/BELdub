@@ -1014,7 +1014,7 @@ ul li {
 /* MODAL VOOR MAP */
 
 .modalmap {
-  position: absolute !important;
+  position: fixed !important;
   top: 0px;
   left: 0;
   right: 0;
@@ -1027,7 +1027,6 @@ ul li {
 }
 
 .modaldocu {
-  position: fixed !important;
   /*background: linear-gradient(to bottom right, black, #84CBA3); */
   background-color: rgba(0, 0, 0, 1);
 }
@@ -1145,7 +1144,7 @@ ul li {
     border: 1px solid white;
     padding: 15px 0;
     font-size: 1.3em;
-    position: absolute;
+    position: fixed;
     bottom: 0;
   }
 
